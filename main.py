@@ -24,7 +24,11 @@ from parse_load_data import parse_year
 # import parse_load_data
 
 def main():
-    parse_year(2019)
+    load_19 = parse_year(2019)
+
+    for data in load_19:
+        data.load_print()
+        pass
 
 
 if __name__ == "__main__":

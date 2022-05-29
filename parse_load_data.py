@@ -5,14 +5,19 @@ Goal: Parse .csv files
 """
 import csv
 
+from load_time import LOAD_TIME
+
 def parse_year(year):
     times = []
     loads = []
+    load_time = []
     months_per_year = 12
     for month in range(1 , months_per_year + 1):
         parse_month(year,month,times,loads)
     for index in range(len(times)):
-        print(times[index], ":", loads[index])
+        load_time.append(LOAD_TIME(times[index], loads[index]))
+    
+    return load_time
 
         
 def parse_month(year,month,times,loads):
