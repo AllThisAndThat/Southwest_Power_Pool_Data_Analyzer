@@ -20,16 +20,11 @@ Brainstorm
     4. Learn fault and distances to fault calculations
 
 """
-from parse_load_data import parse_year
-# import parse_load_data
+# from parse_load_data import parse_year
+from spp_data_time import SPP_Data_Time
 
 def main():
-    load_19 = parse_year(2019)
-
-    for data in load_19:
-        data.load_print()
-        pass
-
+    pass
 
 if __name__ == "__main__":
    main()

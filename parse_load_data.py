@@ -22,7 +22,8 @@ def parse_year(year):
         
 def parse_month(year,month,times,loads):
     rows = []
-    FILE_NAME = '%d\HOURLY_LOAD-'%year
+    # load\2011\HOURLY_LOAD-201101.csv
+    FILE_NAME = 'load\%d\HOURLY_LOAD-'%year
     SPP_MEMBER = 'OKGE'
 
     if month < 10:
